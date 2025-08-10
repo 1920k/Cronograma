@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.c_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+    height: 5rem;
+}
+
+.log {
+    height: 80px;
+    width: 80px;
+}
+
+.link {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+a:hover {
+    color: #404040;
+}
+
+.data_alinhamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background-color: #000000;
+    margin: 2px 0 0 0;
+}
+
+.c_main_principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 7rem;
+
+}
+
+
+.arquivo_calendario_escrito {
+    width: 100%;
+    max-width: 600px;
+    background-color: #8d8d8d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.c_main_calendario {
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    max-width: 9000px;
+    background-color: #cecece;
+    padding: 2px;
+    /* margin: 2rem; */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data_hora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dia {
+    font-weight: 100;
+    font-size: large;
+}
+
+.c_alinhamento_mein_principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_cronograma {
+    width: 100%;
+    max-width: 900px;
+    height: 20rem;
+
+    padding: 5px;
+    margin: 1rem;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    background-color: #000000;
+    overflow-y: auto;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+.evento_c2 {
+    color: rgb(215, 0, 0);
+}
+
+.calendario {
+    width: 100%;
+    max-width: 900px;
+    height: 20rem;
+    padding: 5px;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: white;
+    background-color: #000000;
+    overflow-y: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .c_header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-direction: column; */
+        height: auto;
+        padding: 15px;
+        gap: 6rem;
+    }
+
+    .c_alinhamento_mein_principal {
+        flex-direction: column;
+    }
+
+    .log {
+        height: 60px;
+        width: 60px;
+    }
+
+    .link {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .c_main_principal {
+        flex-direction: column;
+        margin-top: 3rem;
+        padding: 10px;
+    }
+
+    .arquivo_calendario_escrito,
+    .texto_cronograma,
+    .calendario {
+        max-width: 100%;
+        height: 80%;
+        margin: 1rem 0;
+        
+    }
+
+    .c_main_calendario {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .log {
+        height: 50px;
+        width: 50px;
+    }
+
+    a {
+        font-size: 0.9rem;
+    }
+
+    .texto_cronograma,
+    .calendario {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .link {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .link.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
