@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="maria.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <title>Catequese</title>
+</head>
+
+<body>
+    <header class="c_header">
+        <img src="./logo da catequese segundo jubileu.png" alt="Logo" class="log" />
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="link" id="navLinks">
+            <a href="#inicio">Cabeçalho</a>
+            <a href="#">Início</a>
+            <a href="#final">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <div class="data_alinhamento">
+            <div id="data_hora" class="data_hora">
+                <h1 id="hora"></h1>
+                <h1 id="dia" class="dia"></h1>
+            </div>
+        </div>
+
+
+        <section id="inicio">
+            <div class="c_alinhamento_mein_principal">
+
+                <div class="c_main_principal">
+                    <div class="texto_cronograma">
+                        <h1>Cronograma de Eventos - Catequese 2025</h1>
+
+                        <div class="evento_c1">
+                            <br>
+                            <h2>🎨 Festa das Cores</h2>
+                            <p><span class="destaque">Tema:</span> A vida com Jesus é mais colorida</p>
+                            <p><span class="destaque">Etapas:</span> Sementinha e Pré-Eucaristia</p>
+                            <p><span class="destaque">Data:</span> 02 de agosto</p>
+                            <p><span class="destaque">Horário:</span> 13h às 17h</p>
+                            <p><span class="destaque">Local:</span> EC 121, Samambaia Sul</p>
+                            <p><span class="destaque">Valor:</span> R$ 20,00</p>
+                            <p><span class="destaque">Atividades:</span> Espiritualidade, lanche, pintura facial,
+                                brinquedos</p>
+                        </div>
+
+                        <div class="evento_c2">
+                            <br>
+                            <h2>🎉 Arraiá da Jesus de Nazaré</h2>
+                            <p><span class="destaque">Datas:</span> 15, 16 e 17 de agosto</p>
+                            <p><span class="destaque">Barracas:</span> Pescaria, pão com carne e cachorro-quente</p>
+                            <p><span class="destaque">Turnos:</span> 18h–21h / 21h–23h</p>
+                            <p><span class="destaque">Catequistas:</span> 5 por turno na pescaria, 2 por turno no pão
+                            </p>
+                            <p><span class="destaque">Coordenador:</span> Acácio</p>
+                        </div>
+
+                        <div class="evento_c3">
+                            <br>
+                            <h2>✝️ Mutirão de Batismo</h2>
+                            <p><span class="destaque">Data:</span> 06 de setembro (sábado)</p>
+                            <p><span class="destaque">Horário:</span> 19h</p>
+                            <p><span class="destaque">Local:</span> Paróquia</p>
+                            <p><span class="destaque">Ações:</span> Lembrancinha, ornamentação, presença dos catequistas
+                            </p>
+                        </div>
+
+                        <div class="evento_c4">
+                            <br>
+                            <h2>☕ Café da Manhã da Catequese</h2>
+                            <p><span class="destaque">Data:</span> 07 de setembro</p>
+                            <p><span class="destaque">Status:</span> Cancelado</p>
+                        </div>
+
+                        <div class="evento_c5">
+                            <br>
+                            <h2>📚 Formação da Catequese</h2>
+                            <p><span class="destaque">Data:</span> 13 de setembro</p>
+                            <p><span class="destaque">Horário:</span> 16h</p>
+                            <p><span class="destaque">Local:</span> Centro Catequético</p>
+                            <p><span class="destaque">Palestrante:</span> Irmãs ou Diácono Márcio Mascarelas</p>
+                            <p><span class="destaque">Lanche:</span> Compartilhado</p>
+                        </div>
+
+                        <div class="evento_c6">
+                            <br>
+                            <h2>🙏 Adoração para os Catequistas</h2>
+                            <p><span class="destaque">Local:</span> Capela</p>
+                            <p><span class="destaque">Data:</span> A definir</p>
+                            <p><span class="destaque">Responsáveis:</span> Intercessoras da paróquia e grupo RCC</p>
+                            <p><span class="destaque">Liderança:</span> Emilly</p>
+                        </div>
+
+                        <div class="evento_c7">
+                            <br>
+                            <h2>📖 Feira Bíblica</h2>
+                            <p><span class="destaque">Data:</span> 28 de setembro</p>
+                            <p><span class="destaque">Horário:</span> 08h às 13h</p>
+                            <p><span class="destaque">Tema:</span> Títulos de Maria e Todos os Santos</p>
+                            <p><span class="destaque">Atividades:</span> Apresentações, maquetes, cartazes, estandes,
+                                jogos</p>
+                        </div>
+
+                        <div class="evento_c8">
+                            <br>
+                            <h2>☕ Venda de Café da Manhã</h2>
+                            <p><span class="destaque">Data:</span> 05 de outubro</p>
+                            <p><span class="destaque">Horário:</span> 7h</p>
+                            <p><span class="destaque">Etapas:</span> Sementinha e Perseverança 2</p>
+                        </div>
+
+                        <div class="evento_c9">
+                            <br>
+                            <h2>🕊️ Retiro do Crisma</h2>
+                            <p><span class="destaque">Datas:</span> 11 e 12 de outubro</p>
+                            <p><span class="destaque">Local:</span> Casa de Encontro Cor Jesu</p>
+                            <p><span class="destaque">Saída:</span> Sábado às 8h</p>
+                            <p><span class="destaque">Retorno:</span> Domingo às 18h</p>
+                            <p><span class="destaque">Participação:</span> Todos os catequistas de Crisma</p>
+                        </div>
+
+                        <div class="evento_c10">
+                            <br>
+                            <h2>🍞 Retiro da Primeira Eucaristia</h2>
+                            <p><span class="destaque">Data:</span> 18 de outubro</p>
+                            <p><span class="destaque">Horário:</span> 8h às 17h</p>
+                            <p><span class="destaque">Local:</span> Chácara Ipê – DF 180</p>
+                            <p><span class="destaque">Valor:</span> R$ 70,00</p>
+                            <p><span class="destaque">Incluso:</span> Chácara, ônibus, alimentação, lembrancinha</p>
+                        </div>
+
+                        <div class="evento_c11">
+                            <br>
+                            <h2>💍 Mutirão de Casamento</h2>
+                            <p><span class="destaque">Data:</span> 29 de novembro</p>
+                            <p><span class="destaque">Horário:</span> 16h</p>
+                            <p><span class="destaque">Status:</span> Inscrições abertas</p>
+                        </div>
+
+                        <div class="evento_c12">
+                            <br>
+                            <h2>🍷 Sacramento da Primeira Eucaristia</h2>
+                            <p><span class="destaque">Data:</span> 30 de novembro</p>
+                            <p><span class="destaque">Horário:</span> 15h</p>
+                            <p><span class="destaque">Confissões:</span> 25 a 27 de novembro</p>
+                            <p><span class="destaque">Ensaio:</span> 29/11 às 8h</p>
+                        </div>
+
+                        <div class="evento_c13">
+                            <br>
+                            <h2>🔥 Sacramento do Crisma</h2>
+                            <p><span class="destaque">Data:</span> 20 de dezembro</p>
+                            <p><span class="destaque">Horário:</span> 9h</p>
+                            <p><span class="destaque">Confissões:</span> 16 a 19 de dezembro</p>
+                            <p><span class="destaque">Ensaio:</span> 19/12 às 20h30</p>
+                        </div>
+
+                        <div class="evento_c14">
+                            <br>
+                            <h2>🌱 Retiro da Perseverança</h2>
+                            <p><span class="destaque">Data:</span> A definir</p>
+                            <p><span class="destaque">Horário:</span> </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="c_main_principal">
+                    <div id='calendar' class="calendario"></div>
+                </div>
+        </section>
+        <div id="final" class="c_main_calendario">
+            <div class="c_footer" id="final">
+                <p>Contato:
+            </div>
+    </main>
+
+    <footer>
+        <div class="calendario_api c_main_calendario">
+            <p>© 2025 Catequese PJN</p>
+        </div>
+
+
+</body>
+<script src="./deus.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js'></script>
+
+</html>
